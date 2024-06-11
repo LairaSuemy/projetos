@@ -1,0 +1,122 @@
+/* Estilo geral do corpo */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Header: Cabeçalho da página */
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1 {
+    margin: 0;
+    text-align: left;
+}
+
+/* Nav: Barra de navegação dentro do cabeçalho */
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Aside: Conteúdo lateral, normalmente usado para links ou informações adicionais */
+aside {
+    background: #f4f4f4;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+aside h2 {
+    margin-top: 0;
+}
+
+aside ul {
+    list-style: none;
+    padding: 0;
+}
+
+aside ul li {
+    margin-bottom: 0.5rem;
+}
+
+aside ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+aside ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main: Conteúdo principal da página */
+main {
+    padding: 1rem;
+    flex: 1;
+}
+
+main section {
+    margin-bottom: 2rem;
+}
+
+main section h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 0.5rem;
+}
+
+/* Footer: Rodapé da página */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Container: Layout de duas colunas utilizando flexbox */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem;
+}
+
+/* Responsividade: Ajusta o layout para telas menores */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 0.5rem 0;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    footer {
+        position: relative;
+    }
+}
